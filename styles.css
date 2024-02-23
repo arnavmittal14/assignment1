@@ -1,11 +1,21 @@
 
+*{
+    margin: 0;
+}
+
 header {
     background-color: #333;
+    color: white;
     padding: 20px;
     margin: 0;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+}
+
+.header-links{
+    color: white;
+    text-decoration: none;
 }
 
 nav{
@@ -51,4 +61,25 @@ footer {
     padding: 10px;
     margin: 0;
     color: white;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contact-method{
+    background-color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;       
+}
+
+.contact-method a:hover{
+    color: #007BFF;
 }
