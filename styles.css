@@ -1,0 +1,54 @@
+
+header {
+    background-color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;  
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.customer-reviews{
+    display: flex;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
