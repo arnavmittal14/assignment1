@@ -1,121 +1,219 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find the best football gear, jerseys, and accessories at our online football shop. Explore a wide selection of products for players and fans." />
+    <meta
+      name="keywords"
+      content="football shop, football gear, football jerseys, soccer accessories, sports equipment" />
+    <title>AD football shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Find the best football gear, jerseys, and accessories at our online football shop. Explore a wide selection of products for players and fans." />
-  <meta name="keywords"
-    content="football shop, football gear, football jerseys, soccer accessories, sports equipment" />
-  <title>AD football shop</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js"></script>
-</head>
+  <body>
+    <header>
+      <img src="assets/logo.png" />
+      <h1>AD football shop</h1>
+    </header>
 
-<body>
-  <header>
-    <img src="assets/logo.png" />
-    <h1>AD football shop</h1>
-  </header>
+    <center>
+      <nav>
+        <a class="header-links" href="index.html">Home</a>
+        <a class="header-links" href="contact.html">Contact</a>
+        <a class="header-links" href="login.html">Login</a>
+        <a class="header-links" href="products.html">Products</a>
+      </nav>
+      <main>
+        <section class="about-us">
+          <h2>
+            Welcome to our products page! See our available products below.
+          </h2>
+        </section>
+        <section class="product-list">
+          <table cellspacing="40">
+            <tr>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product1.png"
+                    alt="Product 1"
+                    class="product-image" />
+                  <p>Nike Hypervenom Cleats</p>
+                  <p class="product-price"><i>$120.00</i></p>
+                  <button onclick="addToCart('Nike Hypervenom Cleats', 120)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product2.jpg"
+                    alt="Product 2"
+                    class="product-image" />
+                  <p>Adidas Goalkeeper Gloves</p>
+                  <p class="product-price"><i>$40.00</i></p>
+                  <button onclick="addToCart('Adidas Goalkeeper Gloves', 40)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product3.jpg"
+                    alt="Product 3"
+                    class="product-image" />
+                  <p>Adidas SpeedPortal Cleats</p>
+                  <p class="product-price"><i>$90.00</i></p>
+                  <button onclick="addToCart('Adidas SpeedPortal Cleats', 90)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product4.jpg"
+                    alt="Product 4"
+                    class="product-image" />
+                  <p>Manchester United Jersey</p>
+                  <p class="product-price"><i>$110.00</i></p>
+                  <button onclick="addToCart('Manchester United Jersey', 110)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product5.jpg"
+                    alt="Product 5"
+                    class="product-image" />
+                  <p>Chelsea Jersey</p>
+                  <p class="product-price"><i>$80.00</i></p>
+                  <button onclick="addToCart('Chelsea Jersey', 80)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product6.jpg"
+                    alt="Product 6"
+                    class="product-image" />
+                  <p>Real Madrid Jersey</p>
+                  <p class="product-price"><i>$150.00</i></p>
+                  <button onclick="addToCart('Real Madrid Jersey', 150)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product7.png"
+                    alt="Product 7"
+                    class="product-image" />
+                  <p>PSG Jersey</p>
+                  <p class="product-price"><i>$90.00</i></p>
+                  <button onclick="addToCart('PSG Jersey', 90)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+              <td>
+                <div class="product-container">
+                  <img
+                    src="assets/product8.png"
+                    alt="Product 8"
+                    class="product-image" />
+                  <p>Air Jordan Cleats</p>
+                  <p class="product-price"><i>$100.00</i></p>
+                  <button onclick="addToCart('Air Jordan Cleats', 100)">
+                    Add to Cart
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section class="shopping-cart">
+          <h2>Shopping Cart</h2>
+          <div id="cart-display" style="margin-top: 20px"></div>
+        </section>
+      </main>
+      <br />
+      <br />
+      <br />
+      <hr />
+      <footer>©Arnav&Debo Inc. All Rights Reserved</footer>
+    </center>
 
-  <center>
-    <nav>
-      <a class="header-links" href="index.html">Home</a>
-      <a class="header-links" href="contact.html">Contact</a>
-      <a class="header-links" href="login.html">Login</a>
-      <a class="header-links" href="products.html">Products</a>
-    </nav>
-    <main>
-      <section class="about-us">
-        <h2>
-          Welcome to our products page! See our available products below.
-        </h2>
-      </section>
-      <section class="product-list">
-        <table cellspacing="40">
-          <tr>
-            <td>
-              <div class="product-container">
-                <img src="assets/product1.png" alt="Product 1" class="product-image" />
-                <p>Nike Hypervenom Cleats</p>
-                <p class="product-price"><i>$120.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-            <td>
-              <div class="product-container">
-                <img src="assets/product2.jpg" alt="Product 2" class="product-image" />
-                <p>Adidas Goalkeeper Gloves</p>
-                <p class="product-price"><i>$40.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-          </tr>
+    <script>
+      function addToCart(productName, price) {
+        var existingCartItem = document.querySelector(
+          `.cart-item[data-product-name="${productName}"]`
+        );
+        if (existingCartItem) {
+          var quantityElement =
+            existingCartItem.querySelector(".cart-quantity");
+          var quantity = parseInt(quantityElement.textContent);
+          quantityElement.textContent = quantity + 1;
+        } else {
+          var cartItem = document.createElement("div");
+          cartItem.classList.add("cart-item");
+          cartItem.setAttribute("data-product-name", productName);
 
-          <tr>
-            <td>
-              <div class="product-container">
-                <img src="assets/product3.jpg" alt="Product 3" class="product-image" />
-                <p>Adidas SpeedPortal Cleats</p>
-                <p class="product-price"><i>$90.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-            <td>
-              <div class="product-container">
-                <img src="assets/product4.jpg" alt="Product 4" class="product-image" />
-                <p>Manchester United Jersey</p>
-                <p class="product-price"><i>$110.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="product-container">
-                <img src="assets/product5.jpg" alt="Product 5" class="product-image" />
-                <p>Chelsea Jersey</p>
-                <p class="product-price"><i>$80.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-            <td>
-              <div class="product-container">
-                <img src="assets/product6.jpg" alt="Product 6" class="product-image" />
-                <p>Real Madrid Jersey</p>
-                <p class="product-price"><i>$150.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="product-container">
-                <img src="assets/product7.png" alt="Product 7" class="product-image" />
-                <p>PSG Jersey</p>
-                <p class="product-price"><i>$90.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-            <td>
-              <div class="product-container">
-                <img src="assets/product8.png" alt="Product 8" class="product-image" />
-                <p>Air Jordan Cleats</p>
-                <p class="product-price"><i>$100.00</i></p>
-                <button>Add to Cart</button>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </section>
-    </main>
-    <br />
-    <br />
-    <br />
-    <hr />
-    <footer>©Arnav&Debo Inc. All Rights Reserved</footer>
-  </center>
-</body>
+          var productNameElement = document.createElement("p");
+          productNameElement.textContent = productName;
 
+          var priceElement = document.createElement("p");
+          priceElement.textContent = "$" + price.toFixed(2);
+
+          var quantityElement = document.createElement("span");
+          quantityElement.classList.add("cart-quantity");
+          quantityElement.textContent = "1";
+
+          var removeButton = document.createElement("button");
+          removeButton.textContent = "Remove";
+          removeButton.classList.add("remove-button");
+          removeButton.addEventListener("click", function () {
+            var quantity = parseInt(quantityElement.textContent);
+            if (quantity === 1) {
+              cartItem.remove();
+            } else {
+              quantityElement.textContent = quantity - 1;
+            }
+          });
+          removeButton.addEventListener("mouseover", function () {
+            removeButton.style.backgroundColor = "#ff0000";
+          });
+          removeButton.addEventListener("mouseout", function () {
+            removeButton.style.backgroundColor = "";
+          });
+
+          cartItem.appendChild(productNameElement);
+          cartItem.appendChild(priceElement);
+          cartItem.appendChild(quantityElement);
+          cartItem.appendChild(removeButton);
+
+          var cartDisplay = document.getElementById("cart-display");
+          cartDisplay.appendChild(cartItem);
+        }
+
+        alert(productName + " has been added to the cart.");
+      }
+    </script>
+  </body>
 </html>
